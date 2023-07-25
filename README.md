@@ -1,6 +1,9 @@
 # ✨Better TODO Comments✨
 
-Better TODO Comments extension for Visual Studio Code provides you the ability to configure custom comment templates that you can add as snippets inside your files. It also provides a tree view of all your comment templates, clicking on which you can easily search for the comments you have added.
+Better TODO Comments provides the following features
+
+- Configure custom comment templates that you can add as snippets inside your files
+- Provides a tree view of all your comment templates. Clicking on which you can easily search for the comments you have added.
 
 ## Features
 
