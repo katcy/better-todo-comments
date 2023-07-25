@@ -1,0 +1,156 @@
+{
+  "name": "better-todo-comments",
+  "displayName": "Better TODO Comments",
+  "description": "Provides the ability to add and search parameterised TODO comments",
+  "version": "1.0.0",
+  "author": {
+    "name": "katcy",
+    "email": "karthikchinnasamy9494@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katcy/better-todo-comments"
+  },
+  "publisher": "Karthik Chinnasamy",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "icon": "media/logo.png",
+  "keywords": [
+    "todo",
+    "comment",
+    "comments",
+    "snippet",
+    "snippets"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "betterTodoCommentsContainer",
+          "title": "✨Better TODO Comments✨",
+          "icon": "media/quick_reference_all.svg"
+        }
+      ]
+    },
+    "views": {
+      "betterTodoCommentsContainer": [
+        {
+          "id": "betterTodoComments",
+          "name": "✨Better TODO Comments✨"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "betterTodoComments.insertSnippet",
+        "title": "✨Better TODO Comments✨: Insert Snippet",
+        "icon": "$(symbol-snippet)"
+      },
+      {
+        "command": "workbench.actions.treeView.betterTodoComments.collapseAll",
+        "title": "✨Better TODO Comments✨: Collapse All Tree Items",
+        "icon": "$(collapse-all)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "betterTodoComments.insertSnippet",
+        "key": "ctrl+k /",
+        "mac": "cmd+k /",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "when": "view == betterTodoComments",
+          "command": "workbench.actions.treeView.betterTodoComments.collapseAll",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "✨Better TODO Comments✨",
+      "properties": {
+        "betterTodoComments.snippets": {
+          "type": "array",
+          "description": "Array of snippet configurations",
+          "default": [
+            {
+              "name": "Default",
+              "template": "${prefix}: ${description}",
+              "choices": {
+                "prefix": [
+                  "TODO",
+                  "FIXME",
+                  "HACK",
+                  "NOTE",
+                  "DEBUG",
+                  "REVIEW"
+                ]
+              },
+              "insertToTop": false
+            }
+          ],
+          "items": {
+            "type": "object",
+            "title": "Single snippet configuration",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "User-friendly name to identify the snippet"
+              },
+              "template": {
+                "type": "string",
+                "description": "Comment template that gets inserted.\nMay have placeholders inside ${}.\nPlaceholders can only contain\n‣ alpha-numeric characters\n‣ hyphen (-)\n‣ underscore (_)"
+              },
+              "choices": {
+                "type": "object",
+                "description": "Object that contains the array of choices for each placeholder.\nNote: Any placeholders skipped will not be offered any choices"
+              },
+              "insertToTop": {
+                "type": "boolean",
+                "description": "Inserts comment to the top of file instead of the line above.\nDefault: false"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  }
+}
