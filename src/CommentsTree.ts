@@ -59,19 +59,6 @@ class CommentsTreeProvider
             description: snippet.template,
             label: snippet.name,
             snippetItem: snippet,
-            command: {
-              command: VsCodeCommands.findInFiles,
-              title: `Search for \`${snippet.template}\` comments`,
-              tooltip: `Search for \`${snippet.template}\` comments`,
-              arguments: [
-                {
-                  isCaseSensitive: true,
-                  isRegex: true,
-                  triggerSearch: true,
-                  query,
-                },
-              ],
-            },
           });
         })
       );
