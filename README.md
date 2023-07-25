@@ -1,4 +1,4 @@
-# ✨Better TODO Comments✨ README
+# ✨Better TODO Comments✨
 
 Better TODO Comments extension for Visual Studio Code provides you the ability to configure custom comment templates that you can add as snippets inside your files. It also provides a tree view of all your comment templates, clicking on which you can easily search for the comments you have added.
 
@@ -6,13 +6,13 @@ Better TODO Comments extension for Visual Studio Code provides you the ability t
 
 - Configure multiple snippets that support placeholders and choices for those placholders. Check [Settings](#settings) below to understand how to configure these snippets.
 - Insert snippets into your editor window by pressing <kbd>`⌘+K`</kbd> <kbd>`/`</kbd> on macOS or <kbd>`Ctrl+K`</kbd> <kbd>`/`</kbd> on Windows/Linux. This keyboard shortcut can be customised by changing the keybinding for <kbd>betterTodoComments.insertSnippet</kbd> command.
-  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](media/InsertSnippet.gif)
+  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/InsertSnippet.gif)
 
 - Snippets can also be inserted using the command palette.
-  ![Still picture of command palette showing all extension commands](media/CommandPalette.png)
+  ![Still picture of command palette showing all extension commands](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/CommandPalette.png)
 
 - See a tree view of your comment snippets, with all the choices that you've added. Clicking on an item triggers a search for that comment.
-  ![Still picture of the extension's Tree view](media/TreeView.png)
+  ![Still picture of the extension's Tree view](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/TreeView.png)
 
 ## Settings
 
@@ -61,5 +61,13 @@ A sample configuration is shown below for reference:
 ## Release Notes
 
 Check [CHANGELOG.md](CHANGELOG.md) for details.
+
+## Special Thanks To The Co-Author
+
+[![Manu Mathew](https://avatars.githubusercontent.com/u/2261081?s=64)](https://github.com/manu-27993)
+
+## LICENSE
+
+This extension is licensed under the [MIT License](LICENSE)
 
 ---
