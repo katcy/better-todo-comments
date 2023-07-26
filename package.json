@@ -2,7 +2,7 @@
   "name": "commentify",
   "displayName": "Commentify",
   "description": "Provides the ability to add and search parameterised TODO comments",
-  "version": "1.0.0-1",
+  "version": "1.0.1",
   "author": {
     "name": "katcy",
     "email": "karthikchinnasamy9494@gmail.com"
