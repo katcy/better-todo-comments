@@ -1,6 +1,6 @@
-# ✨Better TODO Comments✨
+# Commentify
 
-Better TODO Comments provides the following features
+Commentify provides the following features
 
 - Configure custom comment templates that you can add as snippets inside your files
 - Provides a tree view of all your comment templates. Clicking on which you can easily search for the comments you have added.
@@ -8,20 +8,20 @@ Better TODO Comments provides the following features
 ## Features
 
 - Configure multiple snippets that support placeholders and choices for those placholders. Check [Settings](#settings) below to understand how to configure these snippets.
-- Insert snippets into your editor window by pressing <kbd>`⌘+K`</kbd> <kbd>`/`</kbd> on macOS or <kbd>`Ctrl+K`</kbd> <kbd>`/`</kbd> on Windows/Linux. This keyboard shortcut can be customised by changing the keybinding for <kbd>betterTodoComments.insertSnippet</kbd> command.
-  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/InsertSnippet.gif)
+- Insert snippets into your editor window by pressing <kbd>`⌘+K`</kbd> <kbd>`/`</kbd> on macOS or <kbd>`Ctrl+K`</kbd> <kbd>`/`</kbd> on Windows/Linux. This keyboard shortcut can be customised by changing the keybinding for <kbd>commentify.insertSnippet</kbd> command.
+  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](https://raw.githubusercontent.com/katcy/commentify/main/media/InsertSnippet.gif)
 
 - Snippets can also be inserted using the command palette.
-  ![Still picture of command palette showing all extension commands](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/CommandPalette.png)
+  ![Still picture of command palette showing all extension commands](https://raw.githubusercontent.com/katcy/commentify/main/media/CommandPalette.png)
 
 - See a tree view of your comment snippets, with all the choices that you've added. Clicking on an item triggers a search for that comment.
-  ![Still picture of the extension's Tree view](https://raw.githubusercontent.com/katcy/better-todo-comments/main/media/TreeView.png)
+  ![Still picture of the extension's Tree view](https://raw.githubusercontent.com/katcy/commentify/main/media/TreeView.png)
 
 ## Settings
 
 This extension contributes the following settings:
 
-- `betterTodoComments.snippets`: Array of snippet configurations.
+- `commentify.snippets`: Array of snippet configurations.
 
 Each object in the array corresponds to a snippet you want to configure. The object consists of the following properties:
 
@@ -36,7 +36,7 @@ A sample configuration is shown below for reference:
 
 ```json
 {
-  "betterTodoComments.snippets": [
+  "commentify.snippets": [
     {
       "name": "Insert to Top of file",
       "template": "${prefix}: ${description}",

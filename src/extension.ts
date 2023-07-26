@@ -43,7 +43,7 @@ const activateExtension = (
     log("Activation failed due to no configuration");
     vscode.window
       .showWarningMessage(
-        "Looks like you do not have a configuration for Better TODO Comments",
+        "Looks like you do not have a configuration for Commentify",
         "Configure"
       )
       .then((configure) => {

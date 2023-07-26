@@ -1,6 +1,6 @@
 {
-  "name": "better-todo-comments",
-  "displayName": "Better TODO Comments",
+  "name": "commentify",
+  "displayName": "Commentify",
   "description": "Provides the ability to add and search parameterised TODO comments",
   "version": "1.0.0",
   "author": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/katcy/better-todo-comments.git"
+    "url": "https://github.com/katcy/commentify.git"
   },
   "contributors": [
     {
@@ -20,9 +20,9 @@
     }
   ],
   "publisher": "KarthikChinnasamy",
-  "homepage": "https://katcy.github.io/better-todo-comments/",
+  "homepage": "https://katcy.github.io/commentify/",
   "bugs": {
-    "url": "https://github.com/katcy/better-todo-comments/issues",
+    "url": "https://github.com/katcy/commentify/issues",
     "email": "karthikchinnasamy9494@gmail.com"
   },
   "engines": {
@@ -32,7 +32,7 @@
     "Snippets",
     "Other"
   ],
-  "icon": "media/logo.png",
+  "icon": "Commentify.png",
   "keywords": [
     "todo",
     "comment",
@@ -48,35 +48,35 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "betterTodoCommentsContainer",
-          "title": "✨Better TODO Comments✨",
+          "id": "commentifyExplorer",
+          "title": "Commentify",
           "icon": "media/quick_reference_all.svg"
         }
       ]
     },
     "views": {
-      "betterTodoCommentsContainer": [
+      "commentifyExplorer": [
         {
-          "id": "betterTodoComments",
-          "name": "✨Better TODO Comments✨"
+          "id": "commentifyExplorerView",
+          "name": "Explorer"
         }
       ]
     },
     "commands": [
       {
-        "command": "betterTodoComments.insertSnippet",
-        "title": "✨Better TODO Comments✨: Insert Snippet",
+        "command": "commentify.insertSnippet",
+        "title": "Commentify: Insert Snippet",
         "icon": "$(symbol-snippet)"
       },
       {
-        "command": "workbench.actions.treeView.betterTodoComments.collapseAll",
-        "title": "✨Better TODO Comments✨: Collapse All Tree Items",
+        "command": "workbench.actions.treeView.commentifyExplorerView.collapseAll",
+        "title": "Commentify: Collapse All Tree Items",
         "icon": "$(collapse-all)"
       }
     ],
     "keybindings": [
       {
-        "command": "betterTodoComments.insertSnippet",
+        "command": "commentify.insertSnippet",
         "key": "ctrl+k /",
         "mac": "cmd+k /",
         "when": "editorTextFocus"
@@ -85,16 +85,16 @@
     "menus": {
       "view/title": [
         {
-          "when": "view == betterTodoComments",
-          "command": "workbench.actions.treeView.betterTodoComments.collapseAll",
+          "when": "view == commentifyExplorerView",
+          "command": "workbench.actions.treeView.commentifyExplorerView.collapseAll",
           "group": "navigation"
         }
       ]
     },
     "configuration": {
-      "title": "✨Better TODO Comments✨",
+      "title": "Commentify",
       "properties": {
-        "betterTodoComments.snippets": {
+        "commentify.snippets": {
           "type": "array",
           "description": "Array of snippet configurations",
           "default": [
