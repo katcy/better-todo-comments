@@ -9,13 +9,13 @@ Commentify provides the following features
 
 - Configure multiple snippets that support placeholders and choices for those placholders. Check [Settings](#settings) below to understand how to configure these snippets.
 - Insert snippets into your editor window by pressing <kbd>`⌘+K`</kbd> <kbd>`/`</kbd> on macOS or <kbd>`Ctrl+K`</kbd> <kbd>`/`</kbd> on Windows/Linux. This keyboard shortcut can be customised by changing the keybinding for <kbd>commentify.insertSnippet</kbd> command.
-  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](https://raw.githubusercontent.com/katcy/commentify/main/media/InsertSnippet.gif)
+  ![Sample moving images showcasing how snippets are inserted into an editor using this extension](https://raw.githubusercontent.com/katcy/commentify/main/media/demo/comment%20using%20key%20bindings.gif)
 
 - Snippets can also be inserted using the command palette.
-  ![Still picture of command palette showing all extension commands](https://raw.githubusercontent.com/katcy/commentify/main/media/CommandPalette.png)
+  ![Still picture of command palette showing all extension commands](https://raw.githubusercontent.com/katcy/commentify/main/media/demo/comment%20using%20settings.gif)
 
 - See a tree view of your comment snippets, with all the choices that you've added. Clicking on an item triggers a search for that comment.
-  ![Still picture of the extension's Tree view](https://raw.githubusercontent.com/katcy/commentify/main/media/TreeView.png)
+  ![Still picture of the extension's Tree view](https://raw.githubusercontent.com/katcy/commentify/main/media/demo/Tree%20view.gif)
 
 ## Settings
 
